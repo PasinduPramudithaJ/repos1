@@ -1,52 +1,17 @@
 package com.bankapp.html.model;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-@Entity
-@Table(name="user_data")
-public class User {
-	
-	@Id
-	@GeneratedValue
-	@Column(name="SN")
-	private int sn;
-	
-	@Column(name="firstname")
-    private String firstname;
-	
-	@Column(name="lastname")
-    private String lastname;
-	
-	@Column(name="date")
-    private String date;
-	
-	@Column(name="sex")
-    private String sex;
-	
-	@Column(name="NIC_No")
-    private String NIC_No;
-	
-	@Column(name="contact_No")
-    private String contact_No;
-	
-	@Column(name="street_Address")
-    private String street_Address;
-	
-	@Column(name="street_Address2")
-    private String street_Address2;
 
-	@Column(name="city")
+public class User {
+    private String firstname;
+    private String lastname;
+    private String date;
+    private String sex;
+    private String NIC_No;
+    private String contact_No;
+    private String street_Address;
+    private String street_Address2;
     private String city;
-	
-	@Column(name="province")
     private String province;
-	
-	@Column(name="password")
     private String password;
-	
-	@Column(name="confirm_password")
     private String confirm_password;
    
     // Getters and setters

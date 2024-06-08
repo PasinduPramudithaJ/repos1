@@ -1,13 +1,9 @@
 package com.bankapp.html.controller;
 
 import com.bankapp.html.model.User;
-import com.bankapp.html.repo.UserRepository;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -17,8 +13,6 @@ import java.util.List;
 
 @Controller
 public class Registercontroll {
-	@Autowired
-	private UserRepository userrepo;
 	
 	 private List<User> userList = new ArrayList<>();
 	
@@ -34,7 +28,7 @@ public class Registercontroll {
     }
 
     @PostMapping("/registration")
-    public String registerUser(@ModelAttribute User userRegistration,Model model){
+    public String registerUser(User userRegistration,Model model){
         if (!userRegistration.getPassword().equals(userRegistration.getConfirm_password())) {
            return "result2";
         }
@@ -44,7 +38,6 @@ public class Registercontroll {
             }
         	else {
         		userList.add(userRegistration);
-        		 User user_inserted=userrepo.save(userRegistration);
         		System.out.println(userRegistration);
         		return "result";}}
         	}
@@ -75,7 +68,5 @@ public class Registercontroll {
     public String login3() {
     	return "login3";
     }
-    
-   
     }
 
