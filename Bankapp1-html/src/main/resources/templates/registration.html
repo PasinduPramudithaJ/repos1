@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register Account</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/css1.css}"/>
+</head>
+<body class="body2">
+<h1>Register New Account</h1>
+<form th:action="@{/registration}" th:object="${userRegistration}" method="post">
+    <table>
+        <tr>
+            <td>
+                <label for="firstname">First Name</label><br/>
+                <input type="text" id="firstname" th:field="*{firstname}" placeholder="ex: Kasun" size="25">
+            </td>
+            <td>
+                <label for="lastname">Last Name</label><br/>
+                <input type="text" id="lastname" th:field="*{lastname}" placeholder="ex: Fernando" size="25">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="date">Date of Birth</label><br/>
+                <input type="date" id="date" th:field="*{date}">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label>Gender</label><br/>
+                <input type="radio" id="male" th:field="*{sex}" value="male">
+                <label for="male">Male</label><br/>
+                <input type="radio" id="female" th:field="*{sex}" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="nic">NIC No</label><br/>
+                <input type="text" id="nic" th:field="*{NIC_No}" placeholder="ex: 200198741V" size="25">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="contact">Contact No</label><br/>
+                <input type="text" id="contact" th:field="*{Contact_No}" placeholder="ex: 0775348924" size="25">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="address1">Street Address</label><br/>
+                <input type="text" id="address1" th:field="*{Street_Address}" size="50"><br/><br/>
+                <label for="address2">Street Address Line 2</label><br/>
+                <input type="text" id="address2" th:field="*{Street_Address2}" size="50">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="city">City</label><br/>
+                <input type="text" id="city" th:field="*{City}" size="25">
+            </td>
+            <td><br/>
+                <label for="province">Province</label><br/>
+                <input type="text" id="province" th:field="*{Province}" size="25">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="password">Password</label><br/>
+                <input type="password" id="password" th:field="*{password}" placeholder="Create a password" size="25">
+            </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <label for="confirm_password">Confirm Password</label><br/>
+                <input type="password" id="confirm_password" th:field="*{confirm_password}" placeholder="Confirm your password" size="25">				<span th:if="${#fields.hasErrors('confirm_password')}" th:errors="*{confirm_password}">Password must match</span>
+				 </td>
+        </tr>
+        <tr>
+            <td><br/>
+                <button type="reset">Clear</button>
+            </td>
+            <td><br/>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

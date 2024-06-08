@@ -1,0 +1,38 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registered Users</title>
+    <link rel="stylesheet" type="text/css" href=""th:href="@{/css/css1.css}"/>
+</head>
+<body class="body1">
+    <h1>Registered Users</h1>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>sex</th>
+			<th>NIC No</th>
+			<th>Contact No</th>
+			<th>street_Address 1</th>
+			<th>street_Address 2</th>
+			<th>city</th>
+			<th>province</th>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.firstname}"></td>
+            <td th:text="${user.lastname}"></td>
+            <td th:text="${user.date}"></td>
+			<td th:text="${user.sex}"></td>
+			<td th:text="${user.NIC_No}"></td>
+			<td th:text="${user.contact_No}"></td>
+			<td th:text="${user.street_Address}"></td>
+			<td th:text="${user.street_Address2}"></td>
+			<td th:text="${user.city}"></td>
+			<td th:text="${user.province}"></td>
+            
+        </tr>
+    </table>
+</body>
+</html>
