@@ -58,11 +58,15 @@ public class Registercontroll {
             }
         }
         // Redirect back to the login form with an error message
-        return "/result2";
+        return "/login3";
     
     
     
     
 }
+    @GetMapping("/login3")
+    public String login3() {
+    	return "login3";
+    }
     }
 
