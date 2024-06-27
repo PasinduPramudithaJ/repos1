@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trustfund Bank</title>
+        <link rel="stylesheet" href="CSS.css"/>
+        </head>
+        <body>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const images = [
+                        'image11.jpg', // Example image 6
+                        'image7.jpg',  // Example image 7
+                        'image8.jpg',   // Example image 8
+                        'image9.jpg', // Example image 9
+                        'image10.jpg'   // Example image 10
+                    ];
+                    
+                    let currentIndex = 0;
+                    const imageDiv = document.getElementById('imageDiv');
+        
+                    function changeBackgroundImage() {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        imageDiv.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+                        imageDiv.style.backgroundSize = 'cover';
+                        imageDiv.style.backgroundPosition = 'center';
+                        imageDiv.style.transition = 'background-image 2s ease-in-out';
+                    }
+        
+                    setInterval(changeBackgroundImage, 3800); // Change image every 1 second
+                });
+
+                function setActive(element) {
+            var options = document.getElementsByClassName('account');
+            for (var i = 0; i < account.length; i++) {
+                account[i].classList.remove('active');
+            }
+            element.classList.add('active');
+        }
+
+
+            </script>
+            <div class="header">
+                <table>
+                    <tr>
+                        <td>Home</td>
+                        <td>About Us</td>
+                        <td>Financials</td>
+                        <td>Sustainability</td>
+                        <td>Contact Us</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="img3" id="imageDiv"><br/> welcome<br/><br><br>
+              <div class="headertext">Our Mission:
+                To provide exceptional banking services that foster environmental stewardship and social responsibility, 
+                empowering our clients to make informed financial decisions that benefit both their futures and the planet.</div>
+            </div>
+            <div class="footer2"><br/>
+            <table class="custom-table">
+                <tr>
+                    <td>Personal Banking</td>
+                    <td>Business Banking</td>
+                    <td>Non Resident Banking</td>
+                    <td>Services</td>
+                </tr>
+            </table>
+            </div>
+            <div class="bodytext">
+                <h5>Trust bank personal Banking</h5>
+                <h1>What can we help you with today?</h1>
+            </div>
+            <table class="custom-table2">
+                <tr>
+                    <td>
+            <div class="account" onclick="setActive(this)">
+                <img class="accoutImage" src="image12.jpeg" alt="savings">
+                <p class="p2">Savings Account</p>
+                <div class="info-box">
+                    <h4>Savings Account</h4>
+                    <p>The purpose of a savings account is to allow you to save money and receive interest on your contributions. They provide a number of advantages,
+                         such as quick access to money, security, and the chance to see your savings increase over time. A savings account is a dependable and simple way
+                          to manage your money, regardless of whether you are saving for a particular objective or just want to accumulate money for emergencies.
+                           Competitive interest rates, access to online and mobile banking, and the option to set up automated transfers to support regular saving are frequently considered key advantages.</p>
+                </div>
+            </div></td>
+            <td>
+                <div class="account">
+                    <img class="accoutImage" src="image13.jpeg" alt="deposits">
+                    <p class="p2">Deposits</p>
+                    <div class="info-box">
+                        <h4>Deposits</h4>
+                        <p>The act of putting money into a bank to be kept in an account for security is referred to as a deposit. 
+                            This can apply to various account kinds, including checking, savings, and term deposits like certificates of deposit (CDs). 
+                            The foundation of banking is the deposit, which offers a secure location to keep money while collecting interest.
+                            They serve as the foundation for a number of banking activities as well, enabling banks to lend money to borrowers. 
+                            Security, accessibility, and the possibility of earning interest on savings are advantages for depositors.
+                        </p>
+                    </div>
+                </div></td>
+                <td>
+                    <div class="account">
+                        <img class="accoutImage" src="image14.jpeg" alt="current">
+                        <p class="p2">Current Account</p>
+                        <div class="info-box">
+                            <h4>Current Account</h4>
+                            <p>Checking accounts, sometimes referred to as current accounts, are made for regular transactions. 
+                                Customers can easily access their funds from these accounts using a variety of methods, including cheques, 
+                                debit cards, internet banking, and ATMs. Current accounts are necessary for both personal and company finances, 
+                                and they are perfect for tracking everyday spending. Typically, they provide services like bill payment, direct deposit, 
+                                overdraft protection, and no transaction restrictions.
+                            </p>
+                        </div>
+                    </div></td>
+                    <td>
+                        <div class="account">
+                            <img class="accoutImage" src="image15.jpeg" alt="cards">
+                            <p class="p2">Cards</p>
+                            <div class="info-box">
+                                <h4>Cards</h4>
+                                <p>Cards include credit cards as well as debit cards that banks offer to make transactions easier. 
+                                    With a debit card, you may make purchases using money you've previously deposited because it's directly 
+                                    connected to your bank account. With a credit card, you can borrow money up to a predetermined limit for purchases 
+                                    or cash withdrawals, but you will be required to repay the loan amount plus interest. Cards provide security, ease of use, 
+                                    and the opportunity to establish credit history. They frequently include extra advantages like rebates, prizes, and travel insurance.
+                                </p>
+                            </div>
+                        </div></td>
+                    <td>
+                        <div class="account">
+                            <img class="accoutImage" src="image16.jpeg" alt="Loans">
+                            <p class="p2">Loans</p>
+                            <div class="info-box">
+                                <h4>Loans</h4>
+                                <p>Money borrowed from a bank or other financial organization and need to be repaid over a predetermined time period 
+                                    with interest is called a loan. They can be used for a number of things, such as consolidating debt, supporting school, 
+                                    buying a car, or buying a house (mortgage and auto loan). The financial flexibility that loans offer allows one to accomplish 
+                                    important goals that may not be immediately affordable. Depending on the type of loan and the borrower's creditworthiness, 
+                                    different terms apply, such as interest rates, repayment plans, and fees.
+                                </p>
+                            </div>
+                        </div>
+                            
+                    </td>
+        
+        </tr></table>
+        <div class="img4" id="imageDiv"><br/><br/><br><br>
+            
+          </div>
+        <div class="footerlast"><br/><br>
+        <p>Trustfund Bank of Srilanka <br>
+            Trustfund House, No ##, Sir Razik Fareed Mawatha, P.O. Box ## Colombo 01, Sri Lanka. <br><br></p>
+           <h4> Legal Notice   |   Accessibility   |   Security Measures <br>
+            &copy; 2024 Trustfund Bank of Ceylon PLC All Rights Reserved. <br>
+            Design & Development by Pasindu.</h4>
+        </div>
+        </body>
+      
+        
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TFBS Homepage</title>
+        <link rel="stylesheet" href="CSS.css"/>
+        </head>
+        <body>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const images = [
+                        'image1.jpeg', // Example image 1
+                        'image2.jpg',  // Example image 2
+                        'image3.jpg',   // Example image 3
+                        'image4.jpg'   // Example image 4
+                    ];
+                    
+                    let currentIndex = 0;
+                    const imageDiv = document.getElementById('imageDiv');
+        
+                    function changeBackgroundImage() {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        imageDiv.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+                        imageDiv.style.backgroundSize = 'cover';
+                        imageDiv.style.backgroundPosition = 'center';
+                        imageDiv.style.transition = 'background-image 2s ease-in-out';
+                    }
+        
+                    setInterval(changeBackgroundImage, 5500); // Change image every 1 second
+                });
+            </script>
+            <div class="header">
+                <table>
+                    <tr>
+                        <td>Home</td>
+                        <td>About Us</td>
+                        <td>Financials</td>
+                        <td>Sustainability</td>
+                        <td>Contact Us</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="img1" id="imageDiv"><br/><img src="TFBS.png"/><br/>Trustfund<br/>Bank Of SriLanka<br/><br/><br/>
+                <div class="buttons">
+                    <button onclick="location.href='login.html';">Login</button>
+                    <button onclick="location.href='Registration.html';">Register</button>
+                </div>
+            </div>
+            <div class="footerlast"><br/><br>
+                <p>Trustfund Bank of Srilanka <br>
+                    Trustfund House, No ##, Sir Razik Fareed Mawatha, P.O. Box ## Colombo 01, Sri Lanka. <br><br></p>
+                   <h4> Legal Notice   |   Accessibility   |   Security Measures <br>
+                    &copy; 2024 Trustfund Bank of Ceylon PLC All Rights Reserved. <br>
+                    Design & Development by Pasindu.</h4>
+                </div>
+        </body>
+      
+        
+</html>

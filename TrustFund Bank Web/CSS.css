@@ -1,0 +1,393 @@
+body{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header{
+    background-color: rgb(16, 86, 86);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.img1{
+    background-image:url("image1.jpeg");
+    text-align: center;
+    font-weight: 800;
+    color: rgb(145, 81, 155);
+    font-size: 2cm;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px -2px 0 black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+
+}
+
+
+.footer{
+    background-color: rgb(16, 86, 86);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:left;
+    
+}
+.footer2{
+    background-color: rgb(58, 97, 37);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:left;
+    
+}
+
+.footerlast p{
+    background-color: rgb(16, 86, 86);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+    font-size: 0.4cm;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1cm;
+    
+}
+
+.footerlast h4{
+    background-color: rgb(16, 86, 86);
+    color: lightgray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+    font-size: 0.4cm;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -0.4cm;
+    
+}
+
+.img2{
+    background-image:url("image4.jpg");
+    text-align: center;
+    font-weight: 800;
+    color: rgb(145, 81, 155);
+    font-size: 2cm;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px -2px 0 black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+
+}
+.img3{
+    background-image:url("image7.jpg");
+    text-align: center;
+    font-weight: 800;
+    color: rgb(20, 207, 95);
+    font-size: 2cm;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px -2px 0 black;
+    box-shadow: 0 4px 8px rgba(222, 191, 191, 0.1);
+   margin-top: 0%;
+   
+   
+
+}
+.img4{
+    background-image:url("image17.jpg");
+    text-align: center;
+    font-weight: 800;
+    color: rgb(20, 207, 95);
+    font-size: 2cm;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px -2px 0 black;
+    box-shadow: 0 4px 8px rgba(222, 191, 191, 0.1);
+   margin-top: 0%;
+   
+   
+
+}
+.headertext{
+    text-align: center;
+    color: rgb(243, 252, 244);
+    font-weight: 700;
+   margin-top: -10%;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.footer{
+    background-color: rgb(16, 86, 86);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:left;
+    
+    
+}
+
+
+button {
+    background-color: #800075; 
+    color: white; /* Text color */
+    font-weight: 600;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as block element */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor pointer */
+    border-radius: 5px; /* Rounded corners */
+   
+}
+
+.buttons{
+    background-color: rgba(153, 102, 255, 0.5); /* Transparent white (50% opacity) */
+    width:auto; /* Width of the div */
+    height:auto; /* Height of the div */
+    padding: 20px; /* Padding inside the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for effect */
+    text-align: center; /* Center text */
+    margin-left: auto;
+}
+
+.forms{
+    background-color: rgba(173, 216, 230, 0.5); /* Transparent white (50% opacity) */
+    width:15cm; /* Width of the div */
+    height:20cm; /* Height of the div */
+    padding: 20px; /* Padding inside the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for effect */
+    text-align: center; /* Center text */
+    margin-left: 28%;
+    color: black;
+    font-weight: 800;
+    font-size:20px;
+    text-shadow: none;
+}
+.forms2{
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white (50% opacity) */
+    width:10cm; /* Width of the div */
+    height:8cm; /* Height of the div */
+    padding: 20px; /* Padding inside the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for effect */
+    text-align: center; /* Center text */
+    margin-left: 35%;
+    color: black;
+    font-weight: 800;
+    font-size:20px;
+    text-shadow: none;
+}
+.forms3{
+    background-color:rgba(255, 255, 255, 0.5); /* Transparent white (50% opacity) */
+    width:auto; /* Width of the div */
+    height:auto; /* Height of the div */
+    padding: 20px; /* Padding inside the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for effect */
+    text-align: center; /* Center text */
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: rgb(230, 230, 46); /* Yellow background color on hover */
+    color: #800075; /* Black text color on hover */
+}
+
+table{
+    margin-left:auto;
+    padding: 15px;
+    font-size: large;
+    font-weight: 600;
+    width: 40%;
+    text-align: center;
+
+}
+
+.input-box{
+width: 80%;
+height:1cm;
+background: transparent;
+border: none;
+outline: none;
+border: 2px solid rgba(255, 255, 255, .2);
+border-radius: 40px;
+padding: 20px 45px 20px 20px;
+}
+
+.input-box input ::placeholder{
+    color: #fff;
+}
+
+.remember-forgot{
+    font-weight: 800;
+    color: black;
+    font-size:20px;
+    text-shadow: none;
+}
+input,input[type="text"]{
+    background: transparent;
+    width: auto;
+    height: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    
+}
+select{
+    background: transparent;
+    width: auto;
+    height: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+button, input[type="submit"], input[type="button"] {
+    background-color: #800075; 
+    color: white; /* Text color */
+    font-weight: 600;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Display as block element */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor pointer */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: rgb(230, 230, 46); /* Yellow background color on hover */
+    color: #800075; /* Change text color on hover */
+}
+input[type="text"]:hover,input[type="password"]:hover,input[type="date"]:hover,input[type="email"]:hover{
+    background-color: rgb(166, 235, 251);
+}
+
+table.table{
+    margin: auto;
+}
+.custom-table{
+    margin-left: 1%;
+    width: 38cm;
+}
+.custom-table2{
+    margin-left: -3%;
+    width: 38cm;
+}
+select:hover{
+    background-color: rgb(166, 235, 251);
+}
+p{
+    font-size: 1cm;
+}
+.p2{
+    font-size: 0.5cm;
+}
+h2{
+    margin: 1cm;
+    font-size: 2cm;
+}
+
+.bodytext{
+    color: black;
+    font-size: 0.5cm;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color:rgba(255, 255, 255, 0.5);;
+    }
+    100% {
+        background-color: rgba(173, 216, 230, 0.5);
+    }
+}
+
+
+
+
+h5{
+    color: blue;
+    font-weight: 300;
+}
+
+.account{
+    background-color: rgba(173, 216, 230, 0.5); /* Transparent white (50% opacity) */
+    width:5cm; /* Width of the div */
+    height:5cm; /* Height of the div */
+    padding: 20px; /* Padding inside the div */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for effect */
+    text-align: center; /* Center text */
+    margin-left: 28%;
+    color: black;
+    font-weight: 800;
+    font-size:20px;
+    text-shadow: none;
+    cursor: pointer;
+    
+}
+
+.accoutImage{
+    width: 3cm;
+    height: 3cm;
+    border-radius: 10px;
+}
+
+.account:hover{
+background-color: lightblue;
+}
+
+.account:hover{
+    background-color: lightblue;
+    }
+
+.account.active,.account:active{
+    background-color: rgb(14, 169, 221);
+}
+
+
+.info-box {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index:100;
+    width: 9cm;
+    height: 10cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transform: translateX(-28%);
+    transition: background-color 0.3s, color 0.3s;
+    animation: colorChange2 2s infinite alternate;
+    
+    
+}
+@keyframes colorChange2 {
+    0% {
+        background-color:rgba(255, 255, 255, 0.5);;
+    }
+    100% {
+        background-color: rgba(173, 216, 230, 0.5);
+    }
+}
+.info-box p{
+    font-size: 0.5cm;
+    font-style: italic;
+    color: #928484;
+    
+}
+
+.account:hover .info-box {
+    display: block;
+}
